@@ -4,7 +4,7 @@
 </a>  
 <br><br><br><br>
 
-## JOUR 1 MATIN
+## Patie 1 
 <a href="./00 Les fichiers PDF - Supports de cours/02 Ma première Base de données.pdf">
   <img src="./img/mod/m2.webp" width="200">
 </a>  
@@ -33,7 +33,7 @@ Création d'une table personne
   
 
 
-## JOUR 1 APRES MIDI
+## Partie 2
 
 
 
@@ -81,7 +81,7 @@ $\color{blue}{\text{TP 04 VIP Cocktail partie 2}}$  $\color{red}{\text{[BONUS]}}
 Ajouter les données avec <code>INSERT</code>  
 Afficher les données avec <code>SELECT</code>  
 
-## JOUR 2 MATIN
+## Partie 3
 <table>
 <tr>
 <td width="50%">
@@ -124,7 +124,7 @@ $\color{blue}{\text{TP 06 Films avec catégories}}$  $\color{red}{\text{[BONUS]}
 Mise en place de <code>INNER JOIN</code>  
 
 
-## Jour 2 APRES MIDI
+## Partie 4
 <a href="./00 Les fichiers PDF - Supports de cours/07 Mise en place de plusieurs jointures.pdf">
   <img src="./img/mod/m7.webp" width="200">
 </a>  
@@ -143,7 +143,7 @@ Extraire les données avec plusieurs jointures
   
 
 
-## Jour 3 MATIN
+## partie 5
 <a href="./00 Les fichiers PDF - Supports de cours/08 La table de jointures.pdf">
   <img src="./img/mod/m8.webp" width="200">
 </a>  
@@ -160,7 +160,7 @@ Le PDF : Module 08 La table de jointure
 $\color{blue}{\text{TP 08 Les films et Acteurs}}$  
 Extraire les données  
 
-## Jour 3 APRES MIDI
+## Partie 6
 $\color{blue}{\text{TP 09 Site E-commerce}}$  $\color{red}{\text{[BONUS]}}$   
 Extraire les données  
 

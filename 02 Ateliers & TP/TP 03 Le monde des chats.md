@@ -18,19 +18,6 @@ Prise en main des commandes :
 ![scottish](../img/tp/tp1/scottish.webp)
 
 ## Pour rappel voici la structure de la table
-```sql
-DROP DATABASE IF EXISTS zoo;
-CREATE DATABASE zoo CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE zoo;
-
-CREATE TABLE IF NOT EXISTS chat(
- id INT NOT NULL AUTO_INCREMENT,
- nom VARCHAR(50) NOT NULL,
- yeux VARCHAR(20) NOT NULL,
- age INT NOT NULL,
- CONSTRAINT pk_chat PRIMARY KEY (id)
-)ENGINE=INNODB;
-```
 
 :one: - Ajouter les données  
 :two: - Afficher le chat avec l'id :2  
