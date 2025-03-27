@@ -10,7 +10,7 @@ Gestion des devis et factures d'une entreprise
   
  $\color{red}{\text{Objectif faire la requête :one: et :two: le reste est BONUS}}$
 ## Modèle relationnel
-<img src="../img/db-svg/08-crm.png" width="800">
+
 
 ## Le pitch :
 Le client a un projet  
