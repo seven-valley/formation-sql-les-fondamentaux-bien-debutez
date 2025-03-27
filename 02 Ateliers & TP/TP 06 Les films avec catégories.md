@@ -2,7 +2,7 @@
 <img src="../img/num/six.webp" width="100">
 
 <img src="../img/db-svg/06-film_categ.png" width="600">
-  
+ ![alt text](image.png) 
 
 Prise en main des commandes :  
   
