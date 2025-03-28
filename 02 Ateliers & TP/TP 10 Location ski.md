@@ -185,7 +185,7 @@ Réalisez en priorité les requêtes :one:, :three:, :four:, :six:, :seven:  & :
 |1002|Desmoulin|Daniel|S03|"Décathlon Apparition"|2024-11-23|NULL|10|90|200|
 
 :seven:  Grille des tarifs
-  
+|libelle|libelle|libelle|prixJour|  
 |---|---|---|---|
 |Ski de fond alternatif|Entrée de gamme|Base|10|
 |Ski de fond patineur|Entrée de gamme|Chocolat|15|
