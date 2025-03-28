@@ -3,96 +3,10 @@
 
 <img src="../img/db-svg/11-ski.png" width="800">
 
-# Les tables :
 
-```sql
-DROP DATABASE IF EXISTS location_ski;
 
-CREATE DATABASE location_ski CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-USE location_ski;
 
-CREATE TABLE clients (
-    noCli INT NOT NULL AUTO_INCREMENT,
-    nom VARCHAR(30) NOT NULL,
-    prenom VARCHAR(30),
-    adresse VARCHAR(120),
-    cpo VARCHAR(5) NOT NULL,
-    ville VARCHAR(80) NOT NULL,
-    CONSTRAINT pk_clients PRIMARY KEY (noCli)
-) ENGINE=InnoDB;
-
-CREATE TABLE fiches (
-    noFic INT NOT NULL AUTO_INCREMENT,
-    noCli INT NOT NULL,
-    dateCrea DATE NOT NULL,
-    datePaiement DATE,
-    etat ENUM( "EC", "RE", "SO") NOT NULL DEFAULT "EC",
-    CONSTRAINT pk_fiches PRIMARY KEY (noFic)
-) ENGINE=InnoDB;
-
-CREATE TABLE lignesFic(
-    noLig INT NOT NULL AUTO_INCREMENT,
-    noFic INT NOT NULL,
-    refart CHAR(8) NOT NULL,
-    depart DATE NOT NULL,
-    retour DATE,
-    CONSTRAINT pk_lignesFic PRIMARY KEY (noLig, noFic)
-) ENGINE=InnoDB;
-
-CREATE TABLE articles (
-    refart CHAR(8) NOT NULL UNIQUE,
-    designation VARCHAR(80) NOT NULL,
-    codeGam CHAR(5),
-    codeCate CHAR(5),
-    CONSTRAINT pk_articles PRIMARY KEY (refart)
-) ENGINE=InnoDB;
-
-CREATE TABLE grilleTarifs (
-    codeGam CHAR(5) NOT NULL,
-    codeCate CHAR(5) NOT NULL,
-    codeTarif CHAR(5),
-    CONSTRAINT pk_grilleTarifs PRIMARY KEY (codeGam, codeCate)
-) ENGINE=InnoDB;
-
-CREATE TABLE gammes (
-    codeGam CHAR(5) NOT NULL UNIQUE,
-    libelle VARCHAR(45) NOT NULL,
-    CONSTRAINT pk_gammes PRIMARY KEY (codeGam)
-) ENGINE=InnoDB;
-
-CREATE TABLE categories (
-    codeCate CHAR(5) NOT NULL UNIQUE,
-    libelle VARCHAR(30) NOT NULL,
-    CONSTRAINT pk_categories PRIMARY KEY (codeCate)
-) ENGINE=InnoDB;
-
-CREATE TABLE tarifs (
-    codeTarif CHAR(5) NOT NULL UNIQUE,
-    libelle CHAR(30) NOT NULL,
-    prixJour DECIMAL(5) NOT NULL,
-    CONSTRAINT pk_tarifs PRIMARY KEY (codeTarif)
-) ENGINE=InnoDB;
-
-ALTER TABLE grilleTarifs ADD (
-    CONSTRAINT fk_grilleTarifs_gammes FOREIGN KEY (codeGam) REFERENCES gammes(codeGam),
-    CONSTRAINT fk_grilleTarifs_categories FOREIGN KEY (codeCate) REFERENCES categories(codeCate),
-    CONSTRAINT fk_grilleTarifs_tarifs FOREIGN KEY (codeTarif) REFERENCES tarifs(codeTarif)
-);
-
-ALTER TABLE articles ADD (
-    CONSTRAINT fk_articles_grilleTarifs_codeCate FOREIGN KEY (codeCate) REFERENCES categories(codeCate),
-    CONSTRAINT fk_articles_grilleTarifs_codeGam FOREIGN KEY (codeGam) REFERENCES gammes(codeGam)
-);
-
-ALTER TABLE lignesFic ADD  (
-    CONSTRAINT fk_lignesFic_articles FOREIGN KEY (refart) REFERENCES articles(refart),
-    CONSTRAINT fk_lignesFic_fiches FOREIGN KEY (noFic) REFERENCES fiches(noFic)
-);
-
-ALTER TABLE fiches ADD
-CONSTRAINT fk_fiches_clients FOREIGN KEY (noCli) REFERENCES clients(noCli);
-```
 
 # Les données
 ```sql
