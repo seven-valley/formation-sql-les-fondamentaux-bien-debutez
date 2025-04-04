@@ -9,4 +9,21 @@
 - Votre mission : consevoir la base de données
 - Vous êtes force de proposition.
 
+## Les différents éléments
+**Les éléments qui définisse un vin**
+- Pays "Chili,Argentine"
+- Région "Champagne"
+- Année "2012"
+- Cépages "Merlot"
+- le nom vin :"Chateau Margot"
+- le type "Rouge,Rosé,blanc, pétillant"
+- le vigneron
+- le domaine
+- le type de bouteille "75cl"
+- le prix
+- le panier
+- le degré d'alcool
+
+
+
 
