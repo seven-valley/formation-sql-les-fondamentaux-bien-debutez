@@ -9,7 +9,7 @@ Créer les 2 tables
 :two: Personne
 
 - Utiliser Merise pour relier ces 2 tables  
-- Créer la abse avec db diagram  
+- Créer la base de données avec db diagram  
 - Ajouter les données  
 - Afficher les équipes  
 - Afficher les employés  
