@@ -40,13 +40,13 @@ Ensuite, écrivez les requêtes SQL répondant aux demandes ci-dessous :
 de départ et de retour). 
 
 :three: Liste de tous les articles (référence, désignation et libellé de la catégorie) dont le libellé de la catégorie 
-contient ski. 
+contient ski.  
 :four: Calcul du montant de chaque fiche soldée et du montant total des fiches.   
 :five: Calcul du nombre d’articles actuellement en cours de location.  
 
 :six:
- Calcul du nombre d’articles loués, par client. 
-:seven: Liste des clients qui ont effectué (ou sont en train d’effectuer) plus de 200€ de location. 
+ Calcul du nombre d’articles loués, par client.   
+:seven: Liste des clients qui ont effectué (ou sont en train d’effectuer) plus de 200€ de location.  
 :eight: Liste de tous les articles (loués au moins une fois) et le nombre de fois où ils ont été loués, triés du plus 
 loué au moins loué.   
 
