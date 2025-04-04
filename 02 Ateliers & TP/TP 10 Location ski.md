@@ -5,7 +5,12 @@
 
 
 
-
+## Informations 
+- Lorsqu’un article est rendu, le champ retour de la table lignesFic est valorisé à la date du jour. 
+- L’état initial d’une nouvelle fiche est En Cours (EC). 
+- Lorsque tous les articles d’une fiche ont été rendus, la fiche passe en mode Rendu (RE). 
+- Lorsque le client règle sa fiche, le champ datePaye de la table fiches est valorisé à la date du jour et la 
+fiche passe en état « soldée » (SO).
 
 
 # Les données
